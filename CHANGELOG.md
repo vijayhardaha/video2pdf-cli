@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.0.2 — 2026-04-03
+
+### Fixed
+
+- Fixed GitHub repo URL in README
+- Fixed npm badge links
+
+### Changed
+
+- Updated npm shields to use `img` instead of `badge`
+
 ## v1.0.1 — 2026-04-03
 
 ### Added
