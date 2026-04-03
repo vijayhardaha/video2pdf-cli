@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.0.1 — 2026-04-03
+
+### Added
+
+- Added `v2p-` prefix to output folder to avoid conflicts
+
+### Changed
+
+- Renamed CLI command from `video-to-pdf` to `video2pdf`
+- Renamed package to `@vijayhardaha/video2pdf`
+- Updated repository path to `video2pdf-cli`
+- Added keywords: `img2pdf`, `image2pdf`, `image-to-pdf`
+- Updated all README examples with `-f` flag
+
+### Fixed
+
+- Fixed shebang not being added to CLI binary
+- Fixed package.json paths for CLI bin entry
+- Fixed CI workflow YAML syntax for paths
+- Fixed release-it hooks for proper build before publish
+- Fixed pnpm version mismatch between CI and packageManager
+
 ## v1.0.0 — 2024-04-03
 
 ### Added
