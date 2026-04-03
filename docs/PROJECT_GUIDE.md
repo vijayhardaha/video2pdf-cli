@@ -2,8 +2,8 @@
 
 ## Overview
 
-- **Name**: video-to-pdf
-- **Type**: Node.js CLI tool
+- **Name**: video2pdf
+- **Type**: Video To PDF CLI tool
 - **Purpose**: Convert video files to PDF by extracting frames using FFmpeg
 
 ## Project Structure
