@@ -182,7 +182,7 @@ The folder name is prefixed with `v2p-` to avoid conflicts with existing folders
 
 <details>
   <summary>Where can I get help?</summary>
-  For help, please open an issue on the [GitHub repository](https://github.com/vijayhardaha/video2pdf) or contact the author directly.
+  For help, please open an issue on the [GitHub repository](https://github.com/vijayhardaha/video2pdf-cli) or contact the author directly.
 </details>
 
 ## Best Practices
