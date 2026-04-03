@@ -1,7 +1,7 @@
 # Video To PDF CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/@vijayhardaha%2Fvideo2pdf.svg)](https://badge.fury.io/js/@vijayhardaha%2Fvideo2pdf)
+[![npm version](https://img.shields.io/npm/v/%40vijayhardaha%2Fvideo2pdf)](https://www.npmjs.com/package/@vijayhardaha/video2pdf)
 [![Downloads](https://img.shields.io/npm/dm/%40vijayhardaha%2Fvideo2pdf)](https://www.npmjs.com/package/@vijayhardaha/video2pdf)
 
 A CLI tool that converts video files to PDF by extracting frames using FFmpeg and combining them into a PDF document. This tool is ideal for creating visual documentation, storyboards, or thumbnails from videos.
