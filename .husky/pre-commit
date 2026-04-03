@@ -1,0 +1,3 @@
+pnpm tsc
+pnpm format:check
+pnpm lint

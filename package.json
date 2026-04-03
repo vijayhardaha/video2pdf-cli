@@ -1,0 +1,80 @@
+{
+  "name": "@vijayhardaha/video-to-pdf",
+  "version": "1.0.0",
+  "description": "A CLI tool to convert video files to PDF by extracting frames using FFmpeg.",
+  "homepage": "https://github.com/vijayhardaha/video-to-pdf#readme",
+  "bugs": {
+    "url": "https://github.com/vijayhardaha/video-to-pdf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijayhardaha/video-to-pdf.git"
+  },
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.mjs,.js",
+    "lint:fix": "eslint . --ext .ts,.mjs,.js --fix",
+    "format": "prettier --write \"**/*.{ts,js,mjs,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,mjs,json,md,yml,yaml}\"",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "video",
+    "pdf",
+    "ffmpeg",
+    "cli",
+    "typescript"
+  ],
+  "author": {
+    "name": "Vijay Hardaha",
+    "url": "https://github.com/vijayhardaha"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "ffmpeg-static": "^5.3.0",
+    "image-to-pdf": "^3.0.2",
+    "ora": "^9.3.0",
+    "slugify": "^1.6.9"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@eslint/compat": "^2.0.3",
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^9.34.4",
+    "@types/node": "^25.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.0",
+    "@typescript-eslint/parser": "^8.58.0",
+    "@vijayhardaha/dev-config": "^1.0.8",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitest/coverage-v8": "^4.1.2",
+    "@vitest/ui": "^4.1.2",
+    "eslint": "^9.34.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1",
+    "release-it": "^19.2.4",
+    "rollup": "^4.60.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2"
+  }
+}

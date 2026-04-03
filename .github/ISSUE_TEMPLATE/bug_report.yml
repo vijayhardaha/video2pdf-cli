@@ -1,0 +1,30 @@
+---
+name: Bug Report
+about: Report something that isn't working correctly
+title: "[Bug] "
+labels: bug
+---
+description: |
+  Clear description of the bug.
+
+steps_to_reproduce: |
+  1. Go to "..."
+  2. Run "..."
+  3. See error
+
+expected_behavior: |
+  What should happen.
+
+actual_behavior: |
+  What actually happens.
+
+environment:
+  OS:
+  Node version:
+  Tool version:
+
+screenshots: |
+  If applicable.
+
+additional_context: |
+  Any other context about the problem.
