@@ -1,8 +1,8 @@
-# Video to PDF Converter
+# Video To PDF CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/@vijayhardaha%2Fvideo-to-pdf.svg)](https://badge.fury.io/js/@vijayhardaha/video-to-pdf)
-[![Downloads](https://img.shields.io/npm/dm/%40vijayhardaha%2Fvideo-to-pdf)](https://www.npmjs.com/package/@vijayhardaha/video-to-pdf)
+[![npm version](https://badge.fury.io/js/@vijayhardaha%2Fvideo2pdf.svg)](https://badge.fury.io/js/@vijayhardaha/video2pdf)
+[![Downloads](https://img.shields.io/npm/dm/%40vijayhardaha%2Fvideo2pdf)](https://www.npmjs.com/package/@vijayhardaha/video2pdf)
 
 A CLI tool that converts video files to PDF by extracting frames using FFmpeg and combining them into a PDF document. This tool is ideal for creating visual documentation, storyboards, or thumbnails from videos.
 
@@ -44,25 +44,25 @@ For developers, see [docs/PROJECT_GUIDE.md](docs/PROJECT_GUIDE.md) for project s
 ### Install via npm
 
 ```bash
-npm install -g @vijayhardaha/video-to-pdf
+npm install -g @vijayhardaha/video2pdf
 ```
 
 ### Install via yarn
 
 ```bash
-yarn global add @vijayhardaha/video-to-pdf
+yarn global add @vijayhardaha/video2pdf
 ```
 
 ### Install via pnpm
 
 ```bash
-pnpm add -g @vijayhardaha/video-to-pdf
+pnpm add -g @vijayhardaha/video2pdf
 ```
 
 ### Install via bun
 
 ```bash
-bun add -g @vijayhardaha/video-to-pdf
+bun add -g @vijayhardaha/video2pdf
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ bun add -g @vijayhardaha/video-to-pdf
 ### Basic Usage
 
 ```bash
-video-to-pdf <video-path> <fps>
+video2pdf <video-path> -f <fps>
 ```
 
 ### Options
@@ -83,25 +83,25 @@ video-to-pdf <video-path> <fps>
 Convert a video to PDF with 1 frame per second:
 
 ```bash
-video-to-pdf /path/to/video.mp4 1
+video2pdf /path/to/video.mp4 1
 ```
 
 Convert a video to PDF with 0.5 frames per second:
 
 ```bash
-video-to-pdf /path/to/video.mp4 0.5
+video2pdf /path/to/video.mp4 0.5
 ```
 
 Convert a video to PDF with 2 frames per second:
 
 ```bash
-video-to-pdf /path/to/video.mp4 2
+video2pdf /path/to/video.mp4 2
 ```
 
 #### Example 1: Basic Conversion
 
 ```bash
-video-to-pdf input.mp4 1
+video2pdf input.mp4 1
 ```
 
 This will extract 1 frame per second from `input.mp4` and generate a PDF named `input.pdf`.
@@ -109,7 +109,7 @@ This will extract 1 frame per second from `input.mp4` and generate a PDF named `
 #### Example 2: High Frame Rate
 
 ```bash
-video-to-pdf input.mp4 2
+video2pdf input.mp4 2
 ```
 
 This will extract 2 frames per second from `input.mp4` and generate a PDF named `input.pdf`.
@@ -117,7 +117,7 @@ This will extract 2 frames per second from `input.mp4` and generate a PDF named 
 #### Example 3: Low Frame Rate
 
 ```bash
-video-to-pdf input.mp4 0.5
+video2pdf input.mp4 0.5
 ```
 
 This will extract 0.5 frames per second from `input.mp4` and generate a PDF named `input.pdf`.
@@ -129,7 +129,7 @@ When you run the CLI, it creates a folder in your current working directory with
 - **Extracted images**: PNG files named `images-0001.png`, `images-0002.png`, etc.
 - **Combined PDF**: A single PDF file named `combined-images.pdf`
 
-For example, running `video-to-pdf sample-data/sample.mp4` creates:
+For example, running `video2pdf sample-data/sample.mp4` creates:
 
 ```
 v2p-sample/
@@ -182,7 +182,7 @@ The folder name is prefixed with `v2p-` to avoid conflicts with existing folders
 
 <details>
   <summary>Where can I get help?</summary>
-  For help, please open an issue on the [GitHub repository](https://github.com/vijayhardaha/video-to-pdf) or contact the author directly.
+  For help, please open an issue on the [GitHub repository](https://github.com/vijayhardaha/video2pdf) or contact the author directly.
 </details>
 
 ## Best Practices
