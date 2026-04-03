@@ -35,7 +35,14 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'lcov'],
       include: ['src/**/*.ts'],
-      exclude: ['src/bin/**/*.bin.ts', 'src/@types/**/*.d.ts', '**/node_modules/**', '**/dist/**', '**/coverage/**'],
+      exclude: [
+        'src/bin/**/*.bin.ts',
+        'src/@types/**/*.d.ts',
+        'src/index.ts',
+        '**/node_modules/**',
+        '**/dist/**',
+        '**/coverage/**',
+      ],
     },
   },
 });
