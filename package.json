@@ -55,7 +55,8 @@
   },
   "files": [
     "dist",
-    "LICENSE"
+    "LICENSE",
+    "README.md"
   ],
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",

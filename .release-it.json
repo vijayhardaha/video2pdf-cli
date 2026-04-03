@@ -9,7 +9,7 @@
   "npm": { "publish": true, "publishArgs": ["--access=public"], "ignoreVersion": true },
   "github": { "releaseName": "Release v${version}" },
   "hooks": {
-    "before:init": ["npm run tsc", "npm run format:check", "npm run lint"],
+    "before:init": ["pnpm tsc", "pnpm format:check", "pnpm lint", "pnpm test"],
     "after:release": "echo \"Released v${version} successfully!\""
   }
 }
