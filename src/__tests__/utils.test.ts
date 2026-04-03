@@ -134,7 +134,7 @@ describe('Utility Functions', () => {
 
       const folderName = generateFolderName(videoPath);
 
-      expect(folderName).toBe('my-video');
+      expect(folderName).toBe('v2p-my-video');
     });
 
     // Test case for handling special characters
@@ -144,7 +144,7 @@ describe('Utility Functions', () => {
       const folderName = generateFolderName(videoPath);
 
       // slugify keeps parentheses by default
-      expect(folderName).toBe('my-video-(2024)');
+      expect(folderName).toBe('v2p-my-video-(2024)');
     });
 
     // Test case for handling non-ASCII characters
