@@ -122,6 +122,25 @@ video-to-pdf input.mp4 0.5
 
 This will extract 0.5 frames per second from `input.mp4` and generate a PDF named `input.pdf`.
 
+## Output
+
+When you run the CLI, it creates a folder in your current working directory with a `v2p-` prefix followed by the slugified video filename. Inside this folder, you'll find:
+
+- **Extracted images**: PNG files named `images-0001.png`, `images-0002.png`, etc.
+- **Combined PDF**: A single PDF file named `combined-images.pdf`
+
+For example, running `video-to-pdf sample-data/sample.mp4` creates:
+
+```
+v2p-sample/
+├── combined-images.pdf
+├── images-0001.png
+├── images-0002.png
+└── ...
+```
+
+The folder name is prefixed with `v2p-` to avoid conflicts with existing folders in your directory (e.g., `sample.mp4` → `v2p-sample/` folder).
+
 ## Troubleshooting
 
 <details>
