@@ -10,6 +10,7 @@
   "github": { "releaseName": "Release v${version}" },
   "hooks": {
     "before:init": ["pnpm tsc", "pnpm format:check", "pnpm lint", "pnpm test"],
+    "before:publish": "pnpm run build",
     "after:release": "echo \"Released v${version} successfully!\""
   }
 }
