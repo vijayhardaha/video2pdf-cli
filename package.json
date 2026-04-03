@@ -1,6 +1,6 @@
 {
   "name": "@vijayhardaha/video2pdf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to convert video files to PDF by extracting frames using FFmpeg.",
   "homepage": "https://github.com/vijayhardaha/video2pdf-cli#readme",
   "bugs": {
