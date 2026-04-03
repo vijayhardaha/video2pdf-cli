@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/vijayhardaha/video2pdf-cli.git"
   },
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "video2pdf": "dist/src/index.js"
+    "video2pdf": "dist/index.js"
   },
   "scripts": {
     "start": "node dist/index.js",

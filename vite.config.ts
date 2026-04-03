@@ -19,7 +19,7 @@ const shebangPlugin = (shebang = '#!/usr/bin/env node') => {
     generateBundle(_options, bundle: OutputBundle) {
       for (const fileName of Object.keys(bundle)) {
         const chunk = bundle[fileName];
-        if (chunk && chunk.type === 'chunk' && fileName.endsWith('.cjs')) {
+        if (chunk && chunk.type === 'chunk' && (fileName.endsWith('.js') || fileName.endsWith('.cjs'))) {
           chunk.code = `${shebang}\n${chunk.code}`;
         }
       }
@@ -37,7 +37,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     emptyOutDir: true,
-    lib: { entry: 'src/index.ts', name: 'video-to-pdf', fileName: 'index', formats: ['cjs'] },
+    lib: { entry: 'src/index.ts', name: 'video2pdf', fileName: 'index', formats: ['cjs'] },
     rollupOptions: { external: ['child_process', 'fs', 'path', 'commander', 'ora', 'slugify', 'image-to-pdf'] },
   },
   plugins: [shebangPlugin()],
