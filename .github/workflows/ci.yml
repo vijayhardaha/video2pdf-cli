@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches: [master]
-  paths:
-    - "src/**"
-    - "package.json"
-    - ".github/workflows/ci.yml"
+    paths:
+      - "src/**"
+      - "package.json"
+      - ".github/workflows/ci.yml"
   pull_request:
     branches: [master]
 
