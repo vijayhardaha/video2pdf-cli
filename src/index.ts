@@ -1,6 +1,6 @@
 /**
  * =======================================================================
- * Video to PDF CLI Tool
+ * Video To PDF CLI Tool
  * =======================================================================
  * Purpose: Converts video files to PDF by extracting frames using FFmpeg
  *          and combining them into a PDF document.
@@ -30,7 +30,7 @@ import {
  */
 const program = new Command();
 
-program.name('video-to-pdf').description('Convert video files to PDF by extracting frames').version('1.0.0');
+program.name('video2pdf').description('Convert video files to PDF by extracting frames').version('1.0.0');
 
 program
   .argument('<videoPath>', 'Path to the video file')
