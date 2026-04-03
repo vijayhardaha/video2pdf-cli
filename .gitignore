@@ -152,7 +152,7 @@ tmp/
 # Sample Data
 # ----------------------------------------------------------------------
 # Sample data files that are not needed in version control.
-sample/
+v2p-sample/
 sample-data/
 
 # ----------------------------------------------------------------------
