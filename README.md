@@ -83,25 +83,25 @@ video2pdf <video-path> -f <fps>
 Convert a video to PDF with 1 frame per second:
 
 ```bash
-video2pdf /path/to/video.mp4 1
+video2pdf /path/to/video.mp4 -f 1
 ```
 
 Convert a video to PDF with 0.5 frames per second:
 
 ```bash
-video2pdf /path/to/video.mp4 0.5
+video2pdf /path/to/video.mp4 -f 0.5
 ```
 
 Convert a video to PDF with 2 frames per second:
 
 ```bash
-video2pdf /path/to/video.mp4 2
+video2pdf /path/to/video.mp4 -f 2
 ```
 
 #### Example 1: Basic Conversion
 
 ```bash
-video2pdf input.mp4 1
+video2pdf input.mp4 -f 1
 ```
 
 This will extract 1 frame per second from `input.mp4` and generate a PDF named `input.pdf`.
@@ -109,7 +109,7 @@ This will extract 1 frame per second from `input.mp4` and generate a PDF named `
 #### Example 2: High Frame Rate
 
 ```bash
-video2pdf input.mp4 2
+video2pdf input.mp4 -f 2
 ```
 
 This will extract 2 frames per second from `input.mp4` and generate a PDF named `input.pdf`.
@@ -117,7 +117,7 @@ This will extract 2 frames per second from `input.mp4` and generate a PDF named 
 #### Example 3: Low Frame Rate
 
 ```bash
-video2pdf input.mp4 0.5
+video2pdf input.mp4 -f 0.5
 ```
 
 This will extract 0.5 frames per second from `input.mp4` and generate a PDF named `input.pdf`.
