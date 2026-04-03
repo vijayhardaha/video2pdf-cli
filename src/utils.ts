@@ -61,7 +61,8 @@ export function createFolderIfNotExists(folderPath: string): string {
  */
 export function generateFolderName(videoPath: string): string {
   const fileName = path.basename(videoPath, path.extname(videoPath));
-  return slugify(fileName, { lower: true });
+  const slug = slugify(fileName, { lower: true });
+  return `v2p-${slug}`;
 }
 
 /**
