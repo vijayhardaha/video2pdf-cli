@@ -2,6 +2,36 @@
   "name": "@vijayhardaha/video2pdf",
   "version": "1.0.2",
   "description": "A CLI tool to convert video files to PDF by extracting frames using FFmpeg.",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "vite build",
+    "lint": "eslint . --ext .ts,.tsx,.js,.mjs",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.mjs --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,mjs,json,css,md,yml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,json,css,md,yml}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "tsc": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run",
+    "prepare": "husky"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "video2pdf": "dist/index.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vijay Hardaha",
+    "url": "https://github.com/vijayhardaha"
+  },
   "homepage": "https://github.com/vijayhardaha/video2pdf-cli#readme",
   "bugs": {
     "url": "https://github.com/vijayhardaha/video2pdf-cli/issues"
@@ -9,25 +39,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vijayhardaha/video2pdf-cli.git"
-  },
-  "main": "dist/index.js",
-  "bin": {
-    "video2pdf": "dist/index.js"
-  },
-  "scripts": {
-    "start": "node dist/index.js",
-    "build": "vite build",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
-    "test:coverage": "vitest run --coverage",
-    "tsc": "tsc --noEmit",
-    "lint": "eslint . --ext .ts,.mjs,.js",
-    "lint:fix": "eslint . --ext .ts,.mjs,.js --fix",
-    "format": "prettier --write \"**/*.{ts,js,mjs,json,md,yml,yaml}\"",
-    "format:check": "prettier --check \"**/*.{ts,js,mjs,json,md,yml,yaml}\"",
-    "release": "release-it",
-    "release:dry": "release-it --dry-run",
-    "prepare": "husky"
   },
   "keywords": [
     "video2pdf",
@@ -40,11 +51,6 @@
     "cli",
     "typescript"
   ],
-  "author": {
-    "name": "Vijay Hardaha",
-    "url": "https://github.com/vijayhardaha"
-  },
-  "license": "MIT",
   "dependencies": {
     "commander": "^14.0.3",
     "ffmpeg-static": "^5.3.0",
@@ -52,21 +58,16 @@
     "ora": "^9.3.0",
     "slugify": "^1.6.9"
   },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
-    "@eslint/compat": "^2.0.3",
+    "@eslint/compat": "^2.0.4",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.34.4",
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@typescript-eslint/eslint-plugin": "^8.58.0",
     "@typescript-eslint/parser": "^8.58.0",
-    "@vijayhardaha/dev-config": "^1.0.8",
+    "@vijayhardaha/dev-config": "^1.0.10",
     "@vitejs/plugin-basic-ssl": "^2.3.0",
     "@vitest/coverage-v8": "^4.1.2",
     "@vitest/ui": "^4.1.2",
