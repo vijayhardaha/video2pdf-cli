@@ -5,48 +5,44 @@ on:
     branches: [master]
     paths:
       - "src/**"
+      - "vite.config.ts"
+      - "vitest.config.ts"
+      - "tsconfig.json"
       - "package.json"
       - ".github/workflows/ci.yml"
   pull_request:
     branches: [master]
 
 jobs:
-  lint:
+  ci:
+    name: CI
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 24
-      - uses: pnpm/action-setup@v5
-        with:
-          version: 10
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lint
-      - run: pnpm format:check
 
-  typecheck:
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 24
-      - uses: pnpm/action-setup@v5
-        with:
-          version: 10
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm tsc
+      - name: Checkout
+        uses: actions/checkout@v6
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - name: Set up Node
+        uses: actions/setup-node@v6
         with:
           node-version: 24
-      - uses: pnpm/action-setup@v5
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v5
         with:
           version: 10
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm test
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: TypeScript check
+        run: pnpm run tsc
+
+      - name: Format check
+        run: pnpm run format:check
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Test
+        run: pnpm run test
