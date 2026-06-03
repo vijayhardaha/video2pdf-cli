@@ -1,39 +1,39 @@
+// =======================================================================
+// Typescript Configuration
+// =======================================================================
+// Purpose: Static type-checking and module resolution strategy for the
+//          repository, ensuring predictable behavior and strong typing
+//          across code.
+// Docs:    https://www.typescriptlang.org/tsconfig
+// =======================================================================
+
 {
+  "extends": "@vijayhardaha/dev-config/tsconfig",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "dist",
-
-    // Environment Settings
-    "module": "commonjs",
-    "target": "es2020",
-    "lib": ["es2020"],
-    "types": ["node"],
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "useUnknownInCatchVariables": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": true,
-
-    "skipLibCheck": true
+    "paths": { "@/*": ["./src/*"] },
+    // ----------------------------------------------------------------------
+    // Plugins & extras
+    // ----------------------------------------------------------------------
+    "plugins": [{ "name": "next" }]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "coverage"]
+
+  // ---- Includes ----
+  // Files to include in the project type-checking scope
+  "include": [
+    ".next/dev/types/**/*.ts",
+    ".next/types/**/*.ts",
+    "*.config.mjs",
+    "*.config.ts",
+    "*.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mjs",
+    "**/*.cjs",
+    "next-env.d.ts"
+  ],
+
+  // ---- Excludes ----
+  "exclude": ["node_modules"]
 }
