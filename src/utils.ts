@@ -14,7 +14,9 @@ import slugify from 'slugify';
 
 /**
  * Validates if a file exists at the given path.
+ *
  * @param {string} filePath - The path to the file to validate.
+ *
  * @returns {boolean} - True if the file exists, false otherwise.
  */
 export function validateFileExists(filePath: string): boolean {
@@ -23,7 +25,9 @@ export function validateFileExists(filePath: string): boolean {
 
 /**
  * Validates if the file has a valid video extension.
+ *
  * @param {string} filePath - The path to the file to validate.
+ *
  * @returns {boolean} - True if the file has a valid video extension, false otherwise.
  */
 export function validateVideoExtension(filePath: string): boolean {
@@ -34,7 +38,9 @@ export function validateVideoExtension(filePath: string): boolean {
 
 /**
  * Validates if the fps value is a valid number.
+ *
  * @param {string} fps - The fps value to validate.
+ *
  * @returns {boolean} - True if the fps value is a valid number, false otherwise.
  */
 export function validateFps(fps: string): boolean {
@@ -44,7 +50,9 @@ export function validateFps(fps: string): boolean {
 
 /**
  * Creates a folder if it does not exist.
+ *
  * @param {string} folderPath - The path to the folder to create.
+ *
  * @returns {string} - The path to the created folder.
  */
 export function createFolderIfNotExists(folderPath: string): string {
@@ -56,7 +64,9 @@ export function createFolderIfNotExists(folderPath: string): string {
 
 /**
  * Generates a folder name from a video file name.
+ *
  * @param {string} videoPath - The path to the video file.
+ *
  * @returns {string} - The generated folder name.
  */
 export function generateFolderName(videoPath: string): string {
@@ -67,8 +77,11 @@ export function generateFolderName(videoPath: string): string {
 
 /**
  * Gets the list of PNG images in a folder.
+ *
  * @param {string} folderPath - The path to the folder to search for PNG images.
+ *
  * @returns {string[]} - An array of paths to the PNG images.
+ *
  * @throws {Error} - If the folder does not exist.
  */
 export function getPngImages(folderPath: string): string[] {
