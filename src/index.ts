@@ -26,6 +26,7 @@ import {
 
 /**
  * CLI program instance for video-to-pdf conversion.
+ *
  * @type {Command}
  */
 const program = new Command();
@@ -37,9 +38,11 @@ program
   .option('-f, --fps <number>', 'Frames per second to extract', '1')
   /**
    * Main action handler for the CLI command.
+   *
    * @param {string} videoPath - Path to the video file.
-   * @param {Object} options - CLI options.
+   * @param {object} options - CLI options.
    * @param {string} options.fps - Frames per second to extract.
+   *
    * @returns {Promise<void>}
    */
   .action(async (videoPath: string, options: { fps: string }) => {
