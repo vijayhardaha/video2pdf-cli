@@ -35,7 +35,7 @@ export default defineConfig({
     target: 'node20',
     ssr: true,
     outDir: 'dist',
-    sourcemap: true,
+    sourcemap: false,
     emptyOutDir: true,
     lib: { entry: 'src/index.ts', name: 'video2pdf', fileName: 'index', formats: ['cjs'] },
     rollupOptions: { external: ['child_process', 'fs', 'path', 'commander', 'ora', 'slugify', 'image-to-pdf'] },
