@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] — 2026-06-10
+
+### Changed
+
+- Simplified Prettier ignore rules to reduce noise
+- Updated release-it configuration to enable npm publishing
+- Disabled sourcemaps in production build for smaller bundle size
+- Updated TypeScript configuration for CLI project structure
+
+### Dependencies
+
+- Updated `@types/node` to 25.9.2
+- Updated `@vijayhardaha/dev-config` to 2.1.0
+- Updated `eslint-plugin-jsdoc` to 63.0.2
+- Updated `prettier` to 3.8.4
+- Updated `rollup` to 4.61.1
+- Updated `typescript-eslint` to 8.61.0
+- Removed unused dev dependencies
+- Added `ffmpeg-static` to trustedDependencies
+
 ## [1.0.3] — 2026-04-06
 
 ### Changed
