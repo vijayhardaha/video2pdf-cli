@@ -4,7 +4,7 @@
  * =======================================================================
  * Purpose: Converts video files to PDF by extracting frames using FFmpeg
  *          and combining them into a PDF document.
- * Usage: node dist/index.js <videoPath> -f <fps>
+ * Usage: node dist/index.cjs <videoPath> -f <fps>
  * =======================================================================
  */
 
@@ -29,7 +29,7 @@ import {
  *
  * @type {Command}
  */
-const program = new Command();
+const program: Command = new Command();
 
 program.name('video2pdf').description('Convert video files to PDF by extracting frames').version('1.0.0');
 
