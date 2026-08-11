@@ -4,23 +4,23 @@
 
 1. Fork the repository
 2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/video-to-pdf.git`
-3. Install dependencies: `pnpm install`
+3. Install dependencies: `bun install`
 
 ## Development
 
 ```bash
-pnpm build          # Build the project
-pnpm start <file>   # Run CLI
-pnpm test           # Run tests
-pnpm lint           # Lint code
-pnpm tsc            # Type-check
+bun run build       # Build the project
+bun start <file>    # Run CLI
+bun run test        # Run tests
+bun run lint        # Lint code
+bun run tsc         # Type-check
 ```
 
 ## Pull Request Process
 
 1. Create a feature branch: `git checkout -b feature/your-feature`
 2. Make your changes
-3. Run checks: `pnpm tsc && pnpm lint && pnpm test`
+3. Run checks: `bun run tsc && bun run lint && bun run test`
 4. Commit with clear messages
 5. Push and open a PR
 

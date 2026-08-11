@@ -5,7 +5,7 @@
 - **Name**: video2pdf
 - **Type**: Video To PDF CLI tool
 - **Purpose**: Convert video files to PDF by extracting frames using FFmpeg
-- **Package Main**: `dist/index.js`
+- **Package Main**: `dist/index.cjs`
 
 ## Project Structure
 
@@ -41,38 +41,38 @@ AGENTS.md           # AI agent instructions (authoritative)
 ### Development
 
 ```bash
-pnpm run dev          # Start development server
-pnpm run build        # Build for production to dist/
+bun run dev          # Start development server
+bun run build        # Build for production to dist/
 ```
 
 ### Testing
 
 ```bash
-pnpm run test         # Run tests (Vitest)
-pnpm run test:watch   # Run tests in watch mode
-pnpm run test:coverage # Generate coverage report
+bun run test         # Run tests (Vitest)
+bun run test:watch   # Run tests in watch mode
+bun run test:coverage # Generate coverage report
 ```
 
 ### Linting & Formatting
 
 ```bash
-pnpm run lint         # Lint all files (ESLint)
-pnpm run lint:fix     # Fix auto-fixable issues
-pnpm run format       # Format files (Prettier)
-pnpm run format:check # Check formatting without changes
+bun run lint         # Lint all files (ESLint)
+bun run lint:fix     # Fix auto-fixable issues
+bun run format       # Format files (Prettier)
+bun run format:check # Check formatting without changes
 ```
 
 ### Type Checking
 
 ```bash
-pnpm run tsc          # TypeScript type check
+bun run tsc          # TypeScript type check
 ```
 
 ### Legacy Commands
 
-| Command                      | Description      |
-| ---------------------------- | ---------------- |
-| `pnpm start <file> [-f fps]` | Run CLI (legacy) |
+| Command                     | Description      |
+| --------------------------- | ---------------- |
+| `bun start <file> [-f fps]` | Run CLI (legacy) |
 
 ## Development Workflow
 

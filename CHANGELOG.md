@@ -5,6 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.5] — 2026-08-12
+
+### Fixed
+
+- Fixed the published CLI binary being misinterpreted as ESM by pointing `main` and `bin` at the CommonJS `dist/index.cjs` bundle
+
+### Changed
+
+- Added `type: module` to `package.json` so the CommonJS bundle is picked up correctly
+- Switched package manager references from `pnpm` to `bun` in `AGENTS.md`, `docs/PROJECT_GUIDE.md`, and `docs/CONTRIBUTING.md`
+- Updated documentation references from `dist/index.js` to the CommonJS output `dist/index.cjs`
+- Expanded `.gitignore` with Go, Nix, Redis, Vim, and additional platform/OS entries
+
+### Dependencies
+
+- Updated `ora` to 9.4.1
+- Added `@typescript-eslint/eslint-plugin` 8.67.0
+- Added `@typescript-eslint/parser` 8.67.0
+- Added `eslint-plugin-jsx-a11y` 6.10.2
+- Updated `@commitlint/cli` to 21.2.1
+- Updated `@commitlint/config-conventional` to 21.2.0
+- Updated `@commitlint/types` to 21.2.0
+- Updated `@types/node` to 26.2.0
+- Updated `@vijayhardaha/dev-config` to 2.3.0
+- Updated `@vitest/coverage-v8` to 4.1.10
+- Updated `@vitest/ui` to 4.1.10
+- Updated `eslint` to 10.8.1
+- Updated `eslint-plugin-import-x` to 4.17.1
+- Updated `eslint-plugin-jsdoc` to 64.1.0
+- Updated `globals` to 17.9.0
+- Updated `prettier` to 3.9.6
+- Updated `release-it` to 21.0.2
+- Updated `rollup` to 4.62.4
+- Updated `typescript-eslint` to 8.67.0
+- Updated `vite` to 8.2.1
+- Updated `vitest` to 4.1.10
+
 ## [1.0.4] — 2026-06-10
 
 ### Changed
